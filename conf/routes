@@ -1,0 +1,6 @@
+# api controllers mapping
+GET     /api/usuarios             controllers.api.UsuarioController.listarUsuarios
+GET     /api/usuarios/:id         controllers.api.UsuarioController.buscarUsuario(id: Long)
+POST    /api/usuarios             controllers.api.UsuarioController.adicionarUsuario()
+PUT     /api/usuarios/:id         controllers.api.UsuarioController.atualizarUsuario(id: Long)
+DELETE  /api/usuarios/:id         controllers.api.UsuarioController.removerUsuario(id: Long)
